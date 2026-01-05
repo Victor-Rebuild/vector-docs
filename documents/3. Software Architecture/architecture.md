@@ -42,7 +42,8 @@ The programs are the interesting parts. They communicate with each other via Uni
 ### update-engine
 
 - Handles OTA updates. A user can initiate this via BLE (or over SSH directly), or systemd can initiate it. A systemd timer daemon is set to initiate this a few times a day to check for updates from whatever URL is set in /anki/etc/update-engine.env.
-- Python
+- Python (Legacy)
     - Orignal OS: Python 2.7.3
-    - Modern CFW: Python 3.13.2
+    - Older new yocto based CFW: Python 3.13.2
+- C++ in newer CFWs
 
